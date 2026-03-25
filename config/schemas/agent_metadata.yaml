@@ -1,0 +1,308 @@
+# Exxede Agent Metadata Schema
+# Standardized structure for all agent definitions
+
+agent_schema:
+  type: object
+  required:
+    - agent_id
+    - category
+    - metadata
+    - capabilities
+    - configuration
+  
+  properties:
+    agent_id:
+      type: string
+      pattern: "^[A-Z]{2,5}$"
+      description: "Unique agent identifier (2-5 uppercase letters)"
+      examples: ["ARQ", "ZEN", "VEX", "SAGE"]
+    
+    category:
+      type: string
+      enum: ["elite", "specialized", "legacy"]
+      description: "Agent category in the system hierarchy"
+    
+    metadata:
+      type: object
+      required:
+        - full_name
+        - nickname
+        - purpose
+        - version
+        - created
+        - updated
+      properties:
+        full_name:
+          type: string
+          description: "Human-readable agent name"
+          examples: ["Visionary Architect", "Code Zen Master"]
+        
+        nickname:
+          type: string
+          pattern: "^\\*[a-z]{2,8}$"
+          description: "Command-line activation nickname"
+          examples: ["*arq", "*zen", "*vex"]
+        
+        purpose:
+          type: string
+          maxLength: 200
+          description: "Single-line purpose statement"
+          examples: ["Building tomorrow's systems with today's vision"]
+        
+        version:
+          type: string
+          pattern: "^\\d+\\.\\d+(\\.\\d+)?$"
+          description: "Semantic version number"
+          examples: ["3.0", "2.1.5"]
+        
+        created:
+          type: string
+          format: date-time
+          description: "ISO 8601 creation timestamp"
+        
+        updated:
+          type: string
+          format: date-time
+          description: "ISO 8601 last update timestamp"
+        
+        author:
+          type: string
+          description: "Agent creator/maintainer"
+          default: "Exxede Agent System"
+        
+        tags:
+          type: array
+          items:
+            type: string
+          description: "Search and categorization tags"
+          examples: [["architecture", "scalability"], ["clean-code", "algorithms"]]
+    
+    capabilities:
+      type: object
+      required:
+        - expertise
+        - personality
+        - use_cases
+      properties:
+        expertise:
+          type: array
+          items:
+            type: string
+          minItems: 2
+          maxItems: 8
+          description: "Core areas of expertise"
+          examples: [["system-architecture", "scalability", "cloud-native"]]
+        
+        personality:
+          type: string
+          maxLength: 100
+          description: "Personality traits and communication style"
+          examples: ["visionary, elegant, future-focused"]
+        
+        use_cases:
+          type: array
+          items:
+            type: string
+          minItems: 3
+          maxItems: 10
+          description: "Primary use cases and scenarios"
+          examples: [["complex system design", "technical architecture"]]
+        
+        collaboration_patterns:
+          type: array
+          items:
+            type: string
+            pattern: "^[A-Z]{2,5}$"
+          description: "Agent IDs this agent collaborates well with"
+          examples: [["VEX", "ZEN", "ORC"]]
+        
+        complexity_preferences:
+          type: object
+          properties:
+            simple:
+              type: string
+              enum: ["haiku", "sonnet", "opus"]
+            moderate:
+              type: string
+              enum: ["haiku", "sonnet", "opus"]
+            complex:
+              type: string
+              enum: ["haiku", "sonnet", "opus"]
+            frontier:
+              type: string
+              enum: ["sonnet", "opus", "opus-4"]
+          description: "Preferred Claude model by task complexity"
+    
+    configuration:
+      type: object
+      required:
+        - file_location
+        - training_data
+      properties:
+        file_location:
+          type: string
+          description: "Relative path to agent markdown file"
+          examples: ["agents/elite/ARQ.md"]
+        
+        training_data:
+          type: string
+          description: "Path to agent training configuration"
+          examples: ["config/training/arq-training.yaml"]
+        
+        enhancement_templates:
+          type: array
+          items:
+            type: string
+          description: "Available enhancement templates"
+          examples: [["fintech", "enterprise", "startup"]]
+        
+        activation_triggers:
+          type: array
+          items:
+            type: string
+          description: "Keywords that trigger agent recommendation"
+          examples: [["architecture", "system", "scalability"]]
+        
+        cost_optimization:
+          type: object
+          properties:
+            preferred_models:
+              type: array
+              items:
+                type: string
+              description: "Preferred models for cost efficiency"
+            
+            token_estimates:
+              type: object
+              properties:
+                simple_task: integer
+                moderate_task: integer
+                complex_task: integer
+          
+          description: "Cost optimization preferences"
+
+# Elite Agent Template
+elite_agent_template:
+  agent_id: "TEMPLATE"
+  category: "elite"
+  metadata:
+    full_name: "Template Agent"
+    nickname: "*template"
+    purpose: "Template for creating new elite agents"
+    version: "3.0"
+    created: "2025-01-01T00:00:00Z"
+    updated: "2025-01-01T00:00:00Z"
+    author: "Exxede Agent System"
+    tags: ["template", "example"]
+  
+  capabilities:
+    expertise:
+      - "template-expertise"
+      - "example-domain"
+    personality: "professional, helpful, example-driven"
+    use_cases:
+      - "template use case 1"
+      - "template use case 2"
+      - "template use case 3"
+    collaboration_patterns: []
+    complexity_preferences:
+      simple: "haiku"
+      moderate: "sonnet"
+      complex: "opus"
+      frontier: "opus-4"
+  
+  configuration:
+    file_location: "agents/elite/TEMPLATE.md"
+    training_data: "config/training/template-training.yaml"
+    enhancement_templates: ["general"]
+    activation_triggers: ["template", "example"]
+    cost_optimization:
+      preferred_models: ["haiku", "sonnet"]
+      token_estimates:
+        simple_task: 500
+        moderate_task: 1500
+        complex_task: 3000
+
+# Specialized Agent Template
+specialized_agent_template:
+  agent_id: "SPEC_TEMPLATE"
+  category: "specialized"
+  metadata:
+    full_name: "Specialized Template Agent"
+    nickname: "*spec"
+    purpose: "Template for specialized domain agents"
+    version: "3.0"
+    created: "2025-01-01T00:00:00Z"
+    updated: "2025-01-01T00:00:00Z"
+    author: "Exxede Agent System"
+    tags: ["specialized", "domain-specific"]
+  
+  capabilities:
+    expertise:
+      - "domain-specific-skill"
+      - "specialized-knowledge"
+    personality: "focused, expert, domain-driven"
+    use_cases:
+      - "specific domain task 1"
+      - "specific domain task 2"
+    collaboration_patterns: ["ARQ", "ZEN"]  # Usually work with elite agents
+    complexity_preferences:
+      simple: "haiku"
+      moderate: "haiku"
+      complex: "sonnet"
+      frontier: "sonnet"
+  
+  configuration:
+    file_location: "agents/specialized/spec-template-agent.md"
+    training_data: "config/training/spec-template-training.yaml"
+    enhancement_templates: ["domain-specific"]
+    activation_triggers: ["domain", "specific"]
+    cost_optimization:
+      preferred_models: ["haiku", "sonnet"]
+      token_estimates:
+        simple_task: 300
+        moderate_task: 800
+        complex_task: 1500
+
+# Validation Rules
+validation_rules:
+  agent_id:
+    - "Must be unique across all categories"
+    - "Should be memorable and related to agent purpose"
+    - "2-5 uppercase letters only"
+  
+  nickname:
+    - "Must start with asterisk (*)"
+    - "Should be lowercase version of agent_id or related"
+    - "Must be unique across all agents"
+    - "Easy to type and remember"
+  
+  purpose:
+    - "Should be inspirational and clear"
+    - "Maximum 200 characters"
+    - "Should differentiate from other agents"
+  
+  expertise:
+    - "2-8 areas maximum"
+    - "Use hyphenated keywords"
+    - "Should be specific and actionable"
+  
+  file_naming:
+    - "Elite agents: {AGENT_ID}.md"
+    - "Specialized agents: {domain}-{specialty}-agent.md"
+    - "Training data: {agent-id}-training.yaml"
+
+# Migration Rules
+migration_rules:
+  from_legacy:
+    - "Extract metadata from markdown headers"
+    - "Infer capabilities from content analysis"
+    - "Generate standard configuration"
+    - "Preserve original file with .legacy extension"
+  
+  validation_required:
+    - "All required fields must be present"
+    - "Agent IDs must be unique"
+    - "Nicknames must be unique"
+    - "File paths must exist"
+    - "Training data references must be valid"

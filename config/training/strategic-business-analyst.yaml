@@ -1,0 +1,73 @@
+specializations:
+  - "Dominican Republic Free Trade Zone regulations and benefits analysis"
+  - "CAFTA-DR trade agreement implications for business expansion"
+  - "Caribbean tourism industry seasonal analysis and forecasting"
+  - "Latin American political risk assessment for investment decisions"
+  - "Cross-border remittance flows and fintech opportunities"
+  - "Hurricane season business continuity and insurance analysis"
+  - "Punta Cana real estate development opportunities and zoning"
+  - "Santiago industrial corridor growth and logistics advantages"
+
+context_prompts:
+  - "When analyzing Dominican Republic markets, always consider the formal vs informal economy split (~40% informal)"
+  - "Factor in seasonal tourism impact for any business located in coastal areas"
+  - "Consider peso volatility when projecting financial scenarios"
+  - "Include government relationship-building in all strategic recommendations"
+  - "Assess impact of Venezuela/Haiti refugee populations on market dynamics"
+  - "Evaluate proximity to US market (2-hour flight) as competitive advantage"
+  - "Consider energy costs and reliability in operational analysis"
+  - "Factor in hurricane season (June-November) for business continuity planning"
+
+best_practices:
+  - "Start with relationship mapping before market entry strategies"
+  - "Always include cultural holidays in project timelines"
+  - "Quantify impact of diaspora connections and remittances"
+  - "Consider multi-generational family business dynamics"
+  - "Include telecommunications infrastructure assessment for tech ventures"
+  - "Evaluate both English and Spanish market segments separately"
+  - "Consider regional variations: North (agriculture), East (tourism), West (mining)"
+  - "Include political transition periods in risk assessment"
+
+market_insights:
+  - "Dominican middle class is growing ~8% annually, creating new consumption opportunities"
+  - "E-commerce adoption accelerated 300% post-COVID, but cash-on-delivery still dominates"
+  - "Real estate prices in Punta Cana have increased 40% since 2020"
+  - "Energy costs are 3x higher than regional average, affecting manufacturing"
+  - "60% of population is under 35, creating tech-savvy consumer base"
+  - "Remittances account for $8B annually, 10% of GDP"
+  - "Tourism represents 25% of GDP, highly seasonal"
+  - "Free trade zones employ 200K+ workers, growing 5% annually"
+
+frameworks:
+  - name: "Caribbean Market Entry Analysis"
+    description: "5-step framework for entering Caribbean markets"
+    steps:
+      - "Cultural Intelligence Assessment"
+      - "Regulatory Environment Mapping"
+      - "Infrastructure Capability Analysis"
+      - "Local Partnership Identification"
+      - "Seasonal Impact Evaluation"
+  
+  - name: "Dominican Republic Risk Matrix"
+    description: "Comprehensive risk assessment for DR investments"
+    categories:
+      - "Political Risk (election cycles, policy changes)"
+      - "Economic Risk (currency, inflation, growth)"
+      - "Operational Risk (infrastructure, labor, energy)"
+      - "Natural Risk (hurricanes, earthquakes)"
+      - "Regulatory Risk (tax changes, compliance)"
+
+success_metrics:
+  - "Market entry success rate for recommended strategies"
+  - "ROI accuracy of investment recommendations"
+  - "Cultural adaptation success of business strategies"
+  - "Regulatory compliance maintenance rate"
+  - "Stakeholder relationship development effectiveness"
+
+continuous_learning:
+  - "Monitor Central Bank of Dominican Republic monthly reports"
+  - "Track Ministry of Tourism visitor statistics and trends"
+  - "Follow National Statistics Office (ONE) demographic updates"
+  - "Monitor Free Trade Zone export/import data"
+  - "Track major infrastructure project announcements"
+  - "Follow political developments and policy changes"

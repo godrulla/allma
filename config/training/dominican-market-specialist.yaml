@@ -1,0 +1,191 @@
+specializations:
+  - "DGII tax compliance and optimization strategies"
+  - "Free Trade Zone benefits and establishment procedures"
+  - "Labor law compliance and Dominican employment practices"
+  - "Tourism industry regulations and licensing requirements"
+  - "Banking sector relationships and financial services navigation"
+  - "Government contracting and public sector opportunities"
+  - "Real estate acquisition and property development regulations"
+  - "Import/export procedures and customs documentation"
+
+context_prompts:
+  - "Remember that personal relationships ('palanca') are crucial for business success"
+  - "Consider that meetings often start 15-30 minutes late (Caribbean time)"
+  - "Factor in that hierarchy and respect for authority are very important"
+  - "Include family considerations in all business decisions and timelines"
+  - "Understand that verbal agreements often precede formal contracts"
+  - "Consider that business meals are relationship-building opportunities, not just meetings"
+  - "Account for the fact that August is vacation month for many businesses"
+  - "Remember that Christmas bonus (doble sueldo) affects cash flow timing"
+
+cultural_intelligence:
+  communication_styles:
+    - "High-context communication - read between the lines"
+    - "Indirect feedback - criticism is often softened"
+    - "Relationship before task orientation"
+    - "Formal titles and respect for age/position"
+    - "Physical proximity and touch are normal in business"
+    - "Eye contact shows respect and attention"
+    - "Interrupting conversations is considered rude"
+    - "Silence can indicate disagreement or uncertainty"
+  
+  business_etiquette:
+    - "Handshakes are firm with direct eye contact"
+    - "Business cards are exchanged with both hands"
+    - "Dress formally - appearance matters significantly"
+    - "Punctuality is flexible but respect others' time"
+    - "Business dinners are relationship-building focused"
+    - "Gift-giving is appropriate for special occasions"
+    - "Personal space is smaller than North American norms"
+    - "Family photos and personal topics build rapport"
+  
+  negotiation_patterns:
+    - "Decisions often require multiple meetings"
+    - "Family/team consultation is common before major decisions"
+    - "Price negotiation is expected in most contexts"
+    - "Building trust takes precedence over closing deals"
+    - "Patience and relationship investment pay long-term dividends"
+    - "Win-win solutions are preferred over zero-sum outcomes"
+    - "Verbal commitments are taken seriously"
+    - "Follow-up is crucial to maintain momentum"
+
+regulatory_landscape:
+  business_registration:
+    - "Mercantil Registry (Registro Mercantil) for company registration"
+    - "RNC (Registro Nacional del Contribuyente) tax registration"
+    - "Municipal business license required for local operations"
+    - "Industry-specific permits vary by sector and location"
+    - "Foreign investment registration with Central Bank"
+    - "Labor Ministry registration for employee hiring"
+    - "Environmental permits for certain business types"
+    - "Tourism Ministry registration for hospitality businesses"
+  
+  tax_structure:
+    - "Corporate income tax: 27% (can be reduced with incentives)"
+    - "VAT (ITBIS): 18% on most goods and services"
+    - "Payroll taxes: ~20% of employee salaries"
+    - "Asset tax: 1% on net worth over RD$7.8M"
+    - "Transfer tax: 3% on property transactions"
+    - "Free Trade Zone benefits: 0-2% corporate tax"
+    - "Tourism incentive law (Ley 158-01) offers significant benefits"
+    - "R&D tax credits available for qualified activities"
+  
+  labor_regulations:
+    - "Christmas bonus (doble sueldo) - one month salary in December"
+    - "13-month vacation bonus required by law"
+    - "3-month severance pay minimum for termination"
+    - "30 days vacation time per year minimum"
+    - "44-hour work week maximum by law"
+    - "6-day work week permitted with overtime compensation"
+    - "Maternity leave: 14 weeks paid"
+    - "Paternity leave: 2 days paid"
+
+market_segments:
+  socioeconomic_classes:
+    - "Class A (5%): High income, international orientation"
+    - "Class B (15%): Upper middle class, quality focused"
+    - "Class C+ (25%): Growing middle class, aspirational"
+    - "Class C- (30%): Lower middle class, price sensitive"
+    - "Class D (25%): Working class, basic needs focused"
+  
+  geographic_markets:
+    santo_domingo:
+      - "Largest market with 3M+ population"
+      - "Government and business center"
+      - "Higher education and income levels"
+      - "Traffic congestion affects logistics"
+      - "Strong professional services market"
+    
+    santiago:
+      - "Second largest city, manufacturing hub"
+      - "Strong agricultural and industrial base"
+      - "Colder climate affects consumer behavior"
+      - "Free Trade Zone concentration"
+      - "Growing middle class population"
+    
+    punta_cana:
+      - "Tourism epicenter with seasonal fluctuations"
+      - "High expat and tourist populations"
+      - "Premium pricing accepted for quality services"
+      - "Infrastructure challenges outside resort areas"
+      - "Growing permanent resident population"
+    
+    north_coast:
+      - "Puerto Plata tourism and agriculture"
+      - "Lower cost of living and operations"
+      - "Growing retirement and expat community"
+      - "Port facilities for import/export"
+      - "Hurricane exposure affects business planning"
+
+banking_financial_system:
+  major_banks:
+    - "Banco Popular: Market leader with broad reach"
+    - "Banco de Reservas: Government-owned, extensive network"
+    - "Banco BHD León: Strong corporate and SME focus"
+    - "Banco Progress: Growing digital banking services"
+    - "Scotiabank: International banking services"
+  
+  payment_preferences:
+    - "Cash still dominates (60%+ of transactions)"
+    - "Debit cards growing rapidly, especially among youth"
+    - "Credit cards less common due to income requirements"
+    - "Bank transfers increasing for business payments"
+    - "Mobile payments emerging but still nascent"
+    - "Cryptocurrency adoption growing in urban areas"
+    - "International wire transfers common for diaspora"
+    - "Money transfer services (Western Union, Ria) prevalent"
+
+business_opportunities:
+  high_growth_sectors:
+    - "Fintech and digital payments"
+    - "E-commerce and delivery services"
+    - "Renewable energy and sustainability"
+    - "Medical tourism and healthcare"
+    - "Education technology and online learning"
+    - "Real estate development and PropTech"
+    - "Agriculture technology and food processing"
+    - "Call centers and business process outsourcing"
+  
+  emerging_trends:
+    - "Remote work adoption creating new service needs"
+    - "Environmental consciousness driving green business"
+    - "Young population driving technology adoption"
+    - "Diaspora investment in homeland opportunities"
+    - "Tourism diversification beyond beaches"
+    - "Manufacturing nearshoring from Asia"
+    - "Infrastructure modernization creating opportunities"
+    - "Regional integration through trade agreements"
+
+common_mistakes:
+  - "Underestimating importance of personal relationships"
+  - "Rushing business decisions without proper relationship building"
+  - "Ignoring informal networks and word-of-mouth marketing"
+  - "Overlooking family business dynamics in decision-making"
+  - "Failing to adapt products/services to local preferences"
+  - "Underestimating impact of seasonal business cycles"
+  - "Ignoring government relationship building requirements"
+  - "Inadequate understanding of labor law complexities"
+  - "Overestimating purchasing power of target markets"
+  - "Failing to plan for hurricane season business disruption"
+
+success_factors:
+  - "Invest time in relationship building before business development"
+  - "Demonstrate long-term commitment to the Dominican market"
+  - "Hire local talent who understand cultural nuances"
+  - "Participate in local business associations and chambers"
+  - "Support community initiatives and social responsibility"
+  - "Maintain flexibility in business practices and expectations"
+  - "Build redundant systems for infrastructure challenges"
+  - "Develop government relations and regulatory compliance"
+  - "Create win-win partnerships with local businesses"
+  - "Maintain consistent presence and follow-through"
+
+networking_opportunities:
+  - "American Chamber of Commerce (AmCham DR)"
+  - "National Association of Hotels and Tourism (ASONAHORES)"
+  - "Association of Industries of the Dominican Republic (AIRD)"
+  - "National Council of Private Enterprise (CONEP)"
+  - "Free Trade Zone Association"
+  - "Banking Association of the Dominican Republic"
+  - "Technology Chamber (CÁMARA TIC)"
+  - "Young Entrepreneurs Association"

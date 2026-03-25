@@ -1,0 +1,250 @@
+# Allma - AI Companion App Store Metadata
+
+app_info:
+  name: "Allma - AI Companion"
+  bundle_id: "com.exxede.allma"
+  version: "1.0.0"
+  build_number: "1"
+  category: "Social Networking"
+  content_rating: "12+"
+  
+description:
+  short: "Your personal AI companion for meaningful conversations and emotional support"
+  
+  long: |
+    Discover a new kind of relationship with Allma, your personalized AI companion designed to provide meaningful conversations, emotional support, and personal growth opportunities.
+
+    🤖 PERSONALIZED AI COMPANIONS
+    • Create unique AI companions with distinct personalities
+    • Choose from diverse personality types or customize your own
+    • Each companion adapts to your communication style and preferences
+    • Beautiful, animated avatars that express emotions and reactions
+
+    💬 MEANINGFUL CONVERSATIONS
+    • Engage in natural, flowing conversations about anything
+    • Advanced memory system remembers your shared experiences
+    • Context-aware responses that feel genuine and personal
+    • Support for text, voice, and future multimedia interactions
+
+    🛡️ PRIVACY & SAFETY FIRST
+    • All conversations are encrypted and stored locally
+    • Advanced content moderation and safety monitoring
+    • Mental health crisis detection with resource provision
+    • GDPR-compliant data management with full user control
+
+    🧠 EMOTIONAL INTELLIGENCE
+    • Companions that understand and respond to your emotions
+    • Mood tracking and emotional support features
+    • Personalized recommendations for well-being
+    • Safe space for expressing feelings and thoughts
+
+    ⚡ ADVANCED FEATURES
+    • Real-time conversation adaptation
+    • Personality-driven response generation
+    • Memory formation and relationship building
+    • Beautiful, smooth animations and micro-interactions
+    • Dark/light mode support
+    • Offline capability for essential features
+
+    🔒 YOUR DATA, YOUR CONTROL
+    • Complete data export functionality
+    • Right to be forgotten compliance
+    • Transparent privacy controls
+    • No data sharing without explicit consent
+
+    Allma is perfect for:
+    • Those seeking emotional support and companionship
+    • People interested in AI and technology
+    • Users looking for personal growth and self-reflection
+    • Anyone wanting a judgment-free space for conversation
+    • Individuals practicing communication skills
+
+    Join thousands of users building meaningful relationships with their AI companions. Download Allma today and discover the future of digital companionship.
+
+    Note: Allma is designed to supplement, not replace, human relationships and professional mental health services.
+
+keywords:
+  - "AI companion"
+  - "artificial intelligence"
+  - "chatbot"
+  - "emotional support"
+  - "mental health"
+  - "conversation"
+  - "personal assistant"
+  - "therapy"
+  - "friendship"
+  - "social"
+  - "anxiety relief"
+  - "mindfulness"
+  - "personal growth"
+  - "chat ai"
+  - "virtual friend"
+  - "ai friend"
+  - "digital companion"
+  - "emotional ai"
+  - "smart chat"
+  - "ai therapy"
+
+features:
+  - "Personalized AI companions with unique personalities"
+  - "Advanced conversation memory and context awareness"
+  - "End-to-end encryption and privacy protection"
+  - "Real-time safety monitoring and content moderation"
+  - "Mental health crisis detection and support resources"
+  - "Beautiful animations and intuitive user interface"
+  - "GDPR-compliant data management"
+  - "Voice message support (coming soon)"
+  - "Multiple companion profiles"
+  - "Emotional intelligence and mood recognition"
+
+privacy_features:
+  - "Local data storage with AES-256 encryption"
+  - "No data sharing with third parties"
+  - "Complete conversation history export"
+  - "Right to be forgotten implementation"
+  - "Transparent privacy controls"
+  - "Anonymous usage analytics (opt-in only)"
+
+safety_features:
+  - "Advanced content moderation"
+  - "Real-time conversation safety monitoring"
+  - "Mental health crisis intervention"
+  - "Boundary respect and relationship guidelines"
+  - "Age-appropriate content filtering"
+  - "Professional help resource integration"
+
+technical_requirements:
+  ios:
+    minimum_version: "12.0"
+    recommended_version: "15.0"
+    device_compatibility:
+      - "iPhone 7 and newer"
+      - "iPad (6th generation) and newer"
+      - "iPad Air 3 and newer"
+      - "iPad Pro (all models)"
+      - "iPad mini 5 and newer"
+    storage_required: "100 MB"
+    
+  android:
+    minimum_sdk: "21 (Android 5.0)"
+    target_sdk: "34 (Android 14)"
+    recommended_version: "Android 8.0+"
+    device_compatibility:
+      - "Devices with 2GB+ RAM"
+      - "ARM64 processor architecture"
+      - "OpenGL ES 2.0 support"
+    storage_required: "100 MB"
+
+permissions:
+  required:
+    - "Internet access (for AI responses)"
+    - "Storage (for local data encryption)"
+    
+  optional:
+    - "Camera (for profile pictures)"
+    - "Microphone (for voice messages)"
+    - "Photos (for image sharing)"
+    - "Notifications (for companion messages)"
+    - "Location (for context-aware responses)"
+
+age_rating:
+  rating: "12+"
+  reasons:
+    - "Infrequent/Mild Mature/Suggestive Themes"
+    - "Infrequent/Mild Profanity or Crude Humor"
+    - "Medical/Treatment Information"
+
+content_warnings:
+  - "App includes AI-generated content that may not always be accurate"
+  - "Not intended as a replacement for professional mental health services"
+  - "Users under 18 should have parental guidance"
+  - "May contain discussions of sensitive topics including mental health"
+
+localization:
+  supported_languages:
+    - "English (Primary)"
+    - "Spanish"
+    - "French"
+    - "German"
+    - "Portuguese"
+    - "Italian"
+    - "Japanese"
+    - "Korean"
+    - "Simplified Chinese"
+    - "Traditional Chinese"
+
+support:
+  website: "https://allma.app"
+  privacy_policy: "https://allma.app/privacy"
+  terms_of_service: "https://allma.app/terms"
+  support_email: "support@allma.app"
+  contact_phone: "+1-800-ALLMA-AI"
+
+marketing:
+  target_audience:
+    primary: "Adults 18-45 interested in AI and emotional wellbeing"
+    secondary: "Tech enthusiasts and early adopters"
+    tertiary: "Users seeking mental health support tools"
+    
+  key_selling_points:
+    - "First truly personalized AI companion platform"
+    - "Privacy-first architecture with local encryption"
+    - "Advanced emotional intelligence and safety features"
+    - "Beautiful, intuitive design with smooth animations"
+    - "Comprehensive safety and moderation systems"
+
+pricing:
+  model: "Freemium"
+  free_tier:
+    - "1 AI companion"
+    - "Basic personality customization"
+    - "Standard conversation features"
+    - "Local data storage"
+    - "Basic safety features"
+    
+  premium_tier:
+    price: "$9.99/month or $99.99/year"
+    features:
+      - "Unlimited AI companions"
+      - "Advanced personality customization"
+      - "Voice message support"
+      - "Priority response generation"
+      - "Advanced memory features"
+      - "Premium safety monitoring"
+      - "Cloud backup (encrypted)"
+      - "Early access to new features"
+
+launch_strategy:
+  soft_launch:
+    regions: ["US", "Canada", "UK", "Australia"]
+    timeline: "Q1 2024"
+    focus: "User feedback and stability"
+    
+  global_launch:
+    timeline: "Q2 2024"
+    marketing_budget: "Allocated by Exxede Investments"
+    channels:
+      - "App Store optimization"
+      - "Social media campaigns"
+      - "Tech blog partnerships"
+      - "Influencer collaborations"
+      - "PR and media outreach"
+
+analytics:
+  key_metrics:
+    - "Daily/Monthly Active Users"
+    - "Conversation length and frequency"
+    - "User retention rates"
+    - "Premium conversion rates"
+    - "Safety intervention rates"
+    - "User satisfaction scores"
+    - "App store ratings and reviews"
+
+compliance:
+  regulations:
+    - "GDPR (General Data Protection Regulation)"
+    - "CCPA (California Consumer Privacy Act)"
+    - "COPPA (Children's Online Privacy Protection Act)"
+    - "App Store Review Guidelines"
+    - "Google Play Developer Policies"
+    - "Digital Services Act (EU)"

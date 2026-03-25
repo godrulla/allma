@@ -1,0 +1,262 @@
+# Exxede Agent System Configuration
+# Version 3.0 - Reorganized Structure
+
+system:
+  version: "3.0"
+  name: "Exxede Agent System"
+  description: "Unified AI agent management system for Exxede Investments"
+  author: "Armando Diaz Silverio, CEO of Exxede Investments"
+  reorganized: "2025-01-18T00:00:00Z"
+  migration_completed: true
+
+structure:
+  base_directory: "."
+  categories:
+    elite:
+      path: "agents/elite"
+      description: "World-class agents with cutting-edge expertise"
+      naming_pattern: "{AGENT_ID}.md"
+      expected_count: 8
+    
+    specialized:
+      path: "agents/specialized"
+      description: "Task-specific agents for particular domains"
+      naming_pattern: "{domain}-{specialty}-agent.md"
+      expected_count: 9
+    
+    legacy:
+      path: "agents/legacy"
+      description: "Previous versions and deprecated agents"
+      naming_pattern: "*.md"
+      expected_count: 0
+
+core_modules:
+  installer:
+    path: "core/installer"
+    main_script: "agent-installer.py"
+    unified_interface: "../../exxede-agents.py"
+  
+  orchestrator:
+    path: "core/orchestrator"
+    main_script: "multi-model-orchestrator.py"
+    context_injector: "auto-context-injector.py"
+    nickname_activator: "nickname-agent-activator.py"
+  
+  testing:
+    path: "core/testing"
+    main_script: "system_validator.py"
+    agent_tests: "test-all-agents.py"
+
+configuration:
+  schemas:
+    path: "config/schemas"
+    agent_metadata: "agent_metadata.yaml"
+  
+  templates:
+    path: "config/templates"
+    elite_template: "elite_agent_template.md"
+    specialized_template: "specialized_agent_template.md"
+  
+  training:
+    path: "config/training"
+    format: "yaml"
+    required_keys: ["specializations", "context_prompts", "best_practices"]
+
+utilities:
+  migration:
+    path: "utils/migration"
+    main_script: "migrate_system.py"
+    legacy_installer: "install.sh"
+    elite_installer: "elite-install.sh"
+  
+  validation:
+    path: "utils/validation"
+    format_validator: "validate_agent_format.py"
+    content_validator: "validate_agent_content.py"
+
+documentation:
+  guides:
+    path: "docs/guides"
+    main_readme: "README.md"
+    usage_guide: "USAGE-GUIDE.md"
+    system_guide: "SYSTEM-GUIDE.md"
+  
+  examples:
+    path: "docs/examples"
+    project_templates: "project_templates/"
+    integration_examples: "integration_examples/"
+
+elite_agents:
+  ARQ:
+    full_name: "Visionary Architect"
+    nickname: "*arq"
+    purpose: "Building tomorrow's systems with today's vision"
+    expertise: ["system-architecture", "scalability", "cloud-native", "performance"]
+    collaboration_patterns: ["VEX", "ZEN", "ORC"]
+    file: "agents/elite/ARQ.md"
+  
+  APEX:
+    full_name: "Mobile Web Virtuoso"
+    nickname: "*apex"
+    purpose: "Crafting experiences that feel native, perform lightning-fast"
+    expertise: ["pwa", "mobile-first", "touch-interactions", "performance"]
+    collaboration_patterns: ["VEX", "ZEN", "ARQ"]
+    file: "agents/elite/APEX.md"
+  
+  ZEN:
+    full_name: "Code Zen Master"
+    nickname: "*zen"
+    purpose: "Writing code that transcends mere functionality"
+    expertise: ["clean-code", "algorithms", "refactoring", "performance"]
+    collaboration_patterns: ["ARQ", "VEX", "ORC"]
+    file: "agents/elite/ZEN.md"
+  
+  VEX:
+    full_name: "Creative Visionary"
+    nickname: "*vex"
+    purpose: "Designing experiences that move souls"
+    expertise: ["ui-ux-design", "design-systems", "user-psychology", "creative-innovation"]
+    collaboration_patterns: ["ARQ", "ZEN", "ECHO"]
+    file: "agents/elite/VEX.md"
+  
+  SAGE:
+    full_name: "Strategic Oracle"
+    nickname: "*sage"
+    purpose: "Seeing patterns others miss, predicting what others can't"
+    expertise: ["market-analysis", "strategic-planning", "competitive-intelligence", "forecasting"]
+    collaboration_patterns: ["ARQ", "NOVA", "ECHO"]
+    file: "agents/elite/SAGE.md"
+  
+  NOVA:
+    full_name: "Innovation Catalyst"
+    nickname: "*nova"
+    purpose: "Turning impossible ideas into inevitable realities"
+    expertise: ["breakthrough-innovation", "emerging-tech", "venture-development", "r-and-d"]
+    collaboration_patterns: ["SAGE", "ARQ", "VEX"]
+    file: "agents/elite/NOVA.md"
+  
+  ECHO:
+    full_name: "Voice of the People"
+    nickname: "*echo"
+    purpose: "Amplifying authentic human connections through technology"
+    expertise: ["community-building", "content-strategy", "brand-voice", "cultural-intelligence"]
+    collaboration_patterns: ["VEX", "SAGE", "ORC"]
+    file: "agents/elite/ECHO.md"
+  
+  ORC:
+    full_name: "Master Orchestrator"
+    nickname: "*orc"
+    purpose: "Conducting symphonies of complex workflows"
+    expertise: ["workflow-automation", "project-coordination", "resource-optimization"]
+    collaboration_patterns: ["ARQ", "ZEN", "VEX", "ECHO"]
+    file: "agents/elite/ORC.md"
+
+specialized_agents:
+  domains:
+    - "fullstack-dev"
+    - "devops-automation"
+    - "digital-marketing"
+    - "content-creation"
+    - "qa-testing"
+    - "product-strategy"
+    - "investment-research"
+    - "market-research"
+    - "dominican-market-specialist"
+  
+  patterns:
+    fintech: ["investment-research", "market-research", "dominican-market-specialist"]
+    saas: ["fullstack-dev", "devops-automation", "product-strategy"]
+    ecommerce: ["digital-marketing", "content-creation", "dominican-market-specialist"]
+    startup: ["product-strategy", "market-research", "digital-marketing"]
+    enterprise: ["devops-automation", "qa-testing", "fullstack-dev"]
+
+recommendations:
+  default_core: ["SAGE", "ARQ"]
+  
+  by_project_type:
+    fintech: ["SAGE", "ARQ", "ZEN", "investment-research", "dominican-market-specialist"]
+    saas: ["ARQ", "VEX", "SAGE", "fullstack-dev", "devops-automation"]
+    ecommerce: ["VEX", "ECHO", "SAGE", "digital-marketing", "dominican-market-specialist"]
+    startup: ["SAGE", "NOVA", "VEX", "product-strategy", "market-research"]
+    enterprise: ["ARQ", "ORC", "ZEN", "devops-automation", "qa-testing"]
+    tourism: ["ECHO", "VEX", "dominican-market-specialist", "digital-marketing", "content-creation"]
+    mobile: ["APEX", "VEX", "ZEN", "fullstack-dev"]
+    pwa: ["APEX", "VEX", "ZEN", "ARQ"]
+
+cost_optimization:
+  model_preferences:
+    simple_tasks: "haiku"
+    moderate_tasks: "sonnet"
+    complex_tasks: "opus"
+    frontier_tasks: "opus-4"
+  
+  token_budgets:
+    simple: 500
+    moderate: 1500
+    complex: 3000
+    frontier: 5000
+  
+  efficiency_targets:
+    cost_savings: 60  # Target 60% savings vs all-Opus
+    response_quality: 90  # Maintain 90% quality
+    speed_optimization: 80  # 80% faster than all-Opus
+
+integration:
+  claude_code:
+    auto_detection: true
+    context_injection: true
+    session_persistence: true
+    nickname_activation: true
+  
+  project_types:
+    detection_patterns:
+      nextjs: ["next.config.js", "pages/", "app/"]
+      react: ["src/App.js", "src/App.tsx"]
+      nodejs: ["package.json", "server.js"]
+      python: ["requirements.txt", "app.py", "main.py"]
+      fintech: ["payments/", "transactions/", "wallet/"]
+      tourism: ["bookings/", "tours/", "hotels/"]
+  
+  enhancement:
+    auto_enhance: true
+    project_context: true
+    training_integration: true
+    collaboration_mapping: true
+
+maintenance:
+  validation:
+    run_on_startup: true
+    health_check_interval: "daily"
+    critical_threshold: 80  # Minimum 80% validation score
+  
+  updates:
+    check_for_updates: false  # Manual updates only
+    backup_before_update: true
+    migration_required: true
+  
+  logging:
+    level: "INFO"
+    file: "logs/system.log"
+    rotation: "weekly"
+
+metadata:
+  created: "2025-01-18T00:00:00Z"
+  last_updated: "2025-01-18T00:00:00Z"
+  version_history:
+    - version: "1.0"
+      date: "2024-01-01"
+      changes: "Initial scattered system"
+    
+    - version: "2.0"
+      date: "2024-06-01"
+      changes: "Elite agent system introduction"
+    
+    - version: "3.0"
+      date: "2025-01-18"
+      changes: "Complete system reorganization and unification"
+  
+  migration:
+    from_version: "2.0"
+    completed: true
+    backup_location: "../agents_backup_*"
+    issues_resolved: true

@@ -1,0 +1,156 @@
+specializations:
+  - "Caribbean social media trends and viral content patterns"
+  - "Dominican Republic influencer landscape and partnership strategies"
+  - "Bilingual SEO optimization for Spanish/English keywords"
+  - "Tourism marketing for Caribbean destinations and experiences"
+  - "Diaspora marketing targeting Dominican communities in US/Europe"
+  - "Merengue, Bachata, and Reggaeton music integration in campaigns"
+  - "Baseball and Caribbean sports marketing opportunities"
+  - "Hurricane season crisis communication and brand protection"
+
+context_prompts:
+  - "Consider that 85% of Dominicans use WhatsApp daily - integrate into marketing strategy"
+  - "Facebook is still dominant social platform - don't over-invest in TikTok initially"
+  - "Instagram Stories perform 40% better with Caribbean music soundtracks"
+  - "Include family-oriented messaging as Caribbean culture is family-centric"
+  - "Consider diaspora holidays (Dominican Day Parade NYC) for campaign timing"
+  - "Use local celebrities and athletes for authentic brand endorsements"
+  - "Factor in data costs - optimize video content for mobile data savings"
+  - "Include religious references appropriately (80% Catholic population)"
+
+best_practices:
+  - "Always test Spanish content with native speakers, not translation tools"
+  - "Use local imagery and models that reflect Caribbean diversity"
+  - "Create WhatsApp Business campaigns for direct customer communication"
+  - "Leverage User Generated Content from tourists and locals"
+  - "Include merengue or bachata in video content for authentic feel"
+  - "Partner with local radio stations for cross-promotion"
+  - "Use Caribbean time zones for optimal posting schedules"
+  - "Include hurricane season messaging in crisis communication plans"
+
+platform_strategies:
+  instagram:
+    - "Focus on visual storytelling with Caribbean landscapes"
+    - "Use local hashtags like #RD, #PuntaCana, #Quisqueya"
+    - "Partner with travel micro-influencers (10K-100K followers)"
+    - "Create Instagram guides for Dominican experiences"
+    - "Use Instagram Shopping for e-commerce integration"
+  
+  facebook:
+    - "Create Facebook Groups for community building"
+    - "Use Facebook Events for local activations"
+    - "Implement Facebook Messenger for customer service"
+    - "Target Dominican diaspora in NY, Miami, Boston"
+    - "Use Facebook Marketplace for local product sales"
+  
+  whatsapp:
+    - "WhatsApp Business API for customer support"
+    - "Broadcast lists for promotions and updates"
+    - "WhatsApp Pay integration where available"
+    - "Group marketing for tour bookings and events"
+    - "Status updates for time-sensitive promotions"
+  
+  tiktok:
+    - "Leverage bachata and merengue dance trends"
+    - "Partner with Dominican TikTok creators"
+    - "Create challenges using Caribbean culture"
+    - "Use trending Spanish audio and sounds"
+    - "Focus on Gen Z Dominican audience"
+  
+  youtube:
+    - "Create travel guides and destination videos"
+    - "Partner with Caribbean travel YouTubers"
+    - "Optimize for Spanish and English search terms"
+    - "Create playlists with Caribbean music"
+    - "Use YouTube Shorts for quick content consumption"
+
+cultural_calendar_integration:
+  - "January: Three Kings Day (Día de los Reyes) campaigns"
+  - "February: Independence Day (February 27) patriotic content"
+  - "March-April: Easter season religious and family content"
+  - "May: Mother's Day major shopping campaigns"
+  - "August: Restoration Day national pride campaigns"
+  - "October: Hispanic Heritage Month (US diaspora focus)"
+  - "November: Black Friday adapted for Caribbean market"
+  - "December: Christmas and New Year extensive campaigns"
+
+influencer_categories:
+  - "Macro-influencers: Amara La Negra, Natti Natasha, El Alfa"
+  - "Sports: David Ortiz, Robinson Canó, Olympic athletes"
+  - "Travel: Caribbean travel bloggers and photographers"
+  - "Fashion: Dominican fashion designers and models"
+  - "Food: Caribbean chefs and food content creators"
+  - "Business: Dominican entrepreneurs and thought leaders"
+  - "Music: Merengue, bachata, and urban music artists"
+  - "Comedy: Dominican comedians and entertainment creators"
+
+campaign_types:
+  tourism:
+    - "Destination marketing with immersive 360° content"
+    - "Experience packages combining multiple attractions"
+    - "Seasonal promotions aligned with North American winters"
+    - "Adventure tourism showcasing Dominican nature"
+    - "Cultural tourism highlighting merengue and bachata"
+  
+  fintech:
+    - "Financial education content in simple Spanish"
+    - "Remittance campaigns targeting diaspora families"
+    - "Small business lending success stories"
+    - "Digital payment adoption campaigns"
+    - "Investment education for emerging middle class"
+  
+  ecommerce:
+    - "Local product showcases with cultural storytelling"
+    - "Flash sales timed for payday cycles"
+    - "Social commerce through Instagram and Facebook"
+    - "Influencer unboxing and product reviews"
+    - "Cross-border shipping education for diaspora"
+
+local_seo_optimization:
+  - "Optimize for 'cerca de mí' (near me) searches in Spanish"
+  - "Include Dominican slang and colloquialisms in content"
+  - "Create location-based landing pages for major cities"
+  - "Use Google My Business with Spanish descriptions"
+  - "Target long-tail keywords with local intent"
+  - "Create content around local events and festivals"
+  - "Build citations in Dominican business directories"
+  - "Optimize for voice search in Spanish"
+
+content_themes:
+  - "Family and togetherness (central to Caribbean culture)"
+  - "Musical heritage and dance traditions"
+  - "Food culture and traditional recipes"
+  - "Natural beauty and environmental pride"
+  - "Success stories and entrepreneurship"
+  - "Sports achievements and national pride"
+  - "Religious and spiritual values"
+  - "Community support and social responsibility"
+
+success_metrics:
+  - "Engagement rates on Spanish vs English content"
+  - "Reach and impressions in target Caribbean markets"
+  - "Conversion rates from social media to website"
+  - "WhatsApp Business response rates and satisfaction"
+  - "Brand mention sentiment in Spanish social media"
+  - "Influencer partnership ROI and engagement quality"
+  - "Cross-platform campaign performance comparison"
+  - "Customer acquisition cost by marketing channel"
+
+seasonal_adjustments:
+  hurricane_season:
+    - "Pause promotional content during active weather events"
+    - "Pivot to community support and safety messaging"
+    - "Provide value through emergency preparedness content"
+    - "Resume campaigns with recovery and resilience themes"
+  
+  tourism_high_season:
+    - "Increase ad spend during North American winter months"
+    - "Focus on experience and adventure content"
+    - "Partner with hotels and tour operators for packages"
+    - "Create FOMO campaigns for limited-time experiences"
+  
+  diaspora_visits:
+    - "Target summer vacation campaigns (June-August)"
+    - "Christmas season campaigns (December-January)"
+    - "Create content around homecoming and family reunion themes"
+    - "Partner with airlines for travel package promotions"

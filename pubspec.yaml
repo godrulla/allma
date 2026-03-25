@@ -1,0 +1,135 @@
+name: allma
+description: "An AI companion mobile application with personalized personalities"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+  flutter: ">=3.16.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+
+  # UI & Chat
+  flutter_chat_ui: ^1.6.9
+  cached_network_image: ^3.3.0
+  flutter_animate: ^4.3.0
+  lottie: ^2.7.0
+
+  # Network & API
+  dio: ^5.4.0
+  socket_io_client: ^2.0.3+1
+  connectivity_plus: ^5.0.2
+
+  # Navigation
+  go_router: ^12.1.3
+
+  # Database & Storage
+  sqflite: ^2.3.0
+  flutter_secure_storage: ^9.0.0
+  shared_preferences: ^2.2.2
+  path_provider: ^2.1.2
+
+  # Security & Encryption
+  encrypt: ^5.0.1
+  crypto: ^3.0.3
+  local_auth: ^2.1.6
+
+  # Audio & Voice
+  speech_to_text: ^6.6.0
+  flutter_tts: ^4.0.2
+  permission_handler: ^11.3.1
+  # record: ^5.0.4  # Temporarily disabled due to compatibility issue
+  audioplayers: ^6.1.0
+
+  # Image & File Handling
+  image_picker: ^1.0.7
+  image: ^4.1.7
+  share_plus: ^7.2.2
+
+  # Utilities
+  uuid: ^4.3.3
+  intl: ^0.19.0
+  json_annotation: ^4.8.1
+  equatable: ^2.0.5
+  collection: ^1.18.0
+
+  # Firebase (Optional) - Temporarily disabled
+  # firebase_core: ^2.24.2
+  # firebase_auth: ^4.15.3
+  # firebase_analytics: ^10.7.4
+  # firebase_crashlytics: ^3.4.8
+
+  # Environment & Configuration
+  flutter_dotenv: ^5.1.0
+  device_info_plus: ^9.1.1
+  package_info_plus: ^4.2.0
+
+  # Logging & Monitoring
+  logger: ^2.0.2+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Code Generation
+  build_runner: ^2.4.7
+  json_serializable: ^6.7.1
+  riverpod_generator: ^2.3.9
+
+  # Testing
+  mockito: ^5.4.2
+  integration_test:
+    sdk: flutter
+
+  # Linting
+  flutter_lints: ^3.0.1
+
+  # Asset Generation
+  flutter_gen_runner: ^5.3.2
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/fonts/
+    - .env
+
+  # fonts:
+  #   - family: Inter
+  #     fonts:
+  #       - asset: assets/fonts/Inter-Regular.ttf
+  #       - asset: assets/fonts/Inter-Medium.ttf
+  #         weight: 500
+  #       - asset: assets/fonts/Inter-SemiBold.ttf
+  #         weight: 600
+  #       - asset: assets/fonts/Inter-Bold.ttf
+  #         weight: 700
+
+flutter_gen:
+  output: lib/gen/
+  line_length: 80
+
+  integrations:
+    flutter_svg: true
+    lottie: true
+
+  assets:
+    enabled: true
+    package_parameter_enabled: false
+    style: dot-delimiter
+
+  fonts:
+    enabled: true
+
+  colors:
+    enabled: true
+    inputs:
+      - assets/colors/colors.xml

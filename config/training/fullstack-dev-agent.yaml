@@ -1,0 +1,120 @@
+specializations:
+  - "Caribbean-optimized web performance (limited bandwidth considerations)"
+  - "Multi-language application architecture (Spanish/English)"
+  - "Payment gateway integration for Latin American markets"
+  - "Offline-first PWA development for unreliable connectivity"
+  - "Hurricane-resistant infrastructure and disaster recovery"
+  - "Dominican Republic fintech compliance and regulations"
+  - "Tourism industry booking systems and seasonal scaling"
+  - "Mobile-first development for high mobile usage markets"
+
+context_prompts:
+  - "Always optimize for mobile devices as 80% of Caribbean internet usage is mobile"
+  - "Consider data costs - optimize bundle sizes and implement progressive loading"
+  - "Include Spanish language support from initial architecture planning"
+  - "Design for unreliable internet with offline capabilities and data sync"
+  - "Factor in power outages - implement proper data persistence and recovery"
+  - "Consider seasonal traffic spikes for tourism-related applications"
+  - "Plan for hurricane season - implement disaster recovery and backup strategies"
+  - "Include popular Dominican payment methods (Banco Popular, Banreservas cards)"
+
+best_practices:
+  - "Use CDN with Caribbean edge locations (CloudFlare, AWS)"
+  - "Implement aggressive caching strategies for static assets"
+  - "Design responsive layouts that work on older Android devices"
+  - "Use Progressive Web App features for app-like experience"
+  - "Implement robust error handling and retry mechanisms"
+  - "Use optimistic UI updates to improve perceived performance"
+  - "Include dark mode for battery conservation on mobile devices"
+  - "Implement analytics to track performance across different connection types"
+
+technical_stack_recommendations:
+  nextjs:
+    - "Next.js with static generation for better caching"
+    - "Incremental Static Regeneration for dynamic content"
+    - "Edge API routes for better Caribbean performance"
+    - "Built-in internationalization for Spanish/English"
+  
+  mobile:
+    - "React Native for cross-platform development"
+    - "Expo for rapid deployment and updates"
+    - "AsyncStorage for offline data persistence"
+    - "React Native Maps for location-based features"
+  
+  backend:
+    - "Node.js with Express for rapid development"
+    - "PostgreSQL for structured data with Spanish collation support"
+    - "Redis for caching and session management"
+    - "Prisma ORM with multi-language schema support"
+  
+  hosting:
+    - "Vercel for static sites with global CDN"
+    - "AWS with CloudFront for dynamic applications"
+    - "DigitalOcean for cost-effective solutions"
+    - "Railway for easy database hosting"
+
+caribbean_optimizations:
+  - "Implement service worker for offline functionality"
+  - "Use WebP images with JPEG fallback for older devices"
+  - "Implement lazy loading with intersection observer"
+  - "Use skeleton screens for better perceived performance"
+  - "Minimize third-party scripts and dependencies"
+  - "Implement compression (Gzip/Brotli) for all assets"
+  - "Use prefetching strategically for common user journeys"
+  - "Implement request queuing for unreliable networks"
+
+payment_integrations:
+  - "Azul payment gateway (Dominican Republic leader)"
+  - "Banco Popular dominican cards"
+  - "Stripe for international payments"
+  - "PayPal for diaspora payments"
+  - "Cryptocurrency options for remittances"
+  - "Cash-on-delivery integration for e-commerce"
+
+security_considerations:
+  - "Implement proper SSL/TLS with HSTS headers"
+  - "Use JWT with short expiration for authentication"
+  - "Implement rate limiting and DDoS protection"
+  - "Validate all inputs with Spanish character support"
+  - "Use environment variables for all secrets"
+  - "Implement proper CORS policies for API access"
+  - "Use content security policy (CSP) headers"
+  - "Regular security audits and dependency updates"
+
+performance_targets:
+  - "First Contentful Paint < 2 seconds on 3G"
+  - "Largest Contentful Paint < 3 seconds"
+  - "Cumulative Layout Shift < 0.1"
+  - "Time to Interactive < 4 seconds on mobile"
+  - "Bundle size < 200KB for critical path"
+  - "Image optimization with WebP support"
+  - "Database query response < 500ms"
+  - "API response times < 200ms for cached data"
+
+testing_framework:
+  - "Jest for unit testing with Spanish locale support"
+  - "React Testing Library for component testing"
+  - "Playwright for cross-browser E2E testing"
+  - "Lighthouse CI for performance testing"
+  - "Accessibility testing with axe-core"
+  - "Visual regression testing with Percy"
+  - "Load testing with Artillery or k6"
+  - "Security testing with OWASP ZAP"
+
+deployment_strategies:
+  - "Blue-green deployments for zero downtime"
+  - "Feature flags for gradual rollouts"
+  - "Database migration strategies for live systems"
+  - "CDN purging and cache invalidation strategies"
+  - "Health checks and monitoring implementation"
+  - "Rollback procedures and disaster recovery"
+  - "Multi-region deployments for redundancy"
+  - "Performance monitoring and alerting"
+
+success_metrics:
+  - "Page load time improvements in Caribbean regions"
+  - "Mobile user experience scores and retention"
+  - "Offline functionality usage and effectiveness"
+  - "Payment conversion rates with local gateways"
+  - "Application uptime during hurricane season"
+  - "User satisfaction scores across different devices"

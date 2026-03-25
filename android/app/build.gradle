@@ -1,0 +1,189 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+android {
+    namespace "com.exxede.allma"
+    compileSdk flutter.compileSdkVersion
+    ndkVersion flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    defaultConfig {
+        applicationId "com.exxede.allma"
+        minSdkVersion 21
+        targetSdkVersion flutter.targetSdkVersion
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+        
+        // Enable multidex support for large apps
+        multiDexEnabled true
+        
+        // App name and description
+        resValue "string", "app_name", "Allma - AI Companion"
+        
+        // Network security config
+        networkSecurityConfig "network_security_config.xml"
+        
+        // Proguard configuration
+        proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+        release {
+            storeFile file(System.getenv('ANDROID_KEYSTORE_PATH') ?: 'release.keystore')
+            storePassword System.getenv('ANDROID_KEYSTORE_PASSWORD')
+            keyAlias System.getenv('ANDROID_KEY_ALIAS')
+            keyPassword System.getenv('ANDROID_KEY_PASSWORD')
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+            
+            // Debug-specific configurations
+            buildConfigField "String", "API_BASE_URL", '"https://api-dev.allma.app"'
+            buildConfigField "boolean", "ENABLE_LOGGING", "true"
+            buildConfigField "boolean", "ENABLE_CRASH_REPORTING", "false"
+            
+            // Debug app name
+            resValue "string", "app_name", "Allma Debug"
+        }
+        
+        staging {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release
+            
+            // Staging-specific configurations
+            buildConfigField "String", "API_BASE_URL", '"https://api-staging.allma.app"'
+            buildConfigField "boolean", "ENABLE_LOGGING", "true"
+            buildConfigField "boolean", "ENABLE_CRASH_REPORTING", "true"
+            
+            // Staging app name
+            resValue "string", "app_name", "Allma Staging"
+            
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release
+            
+            // Production configurations
+            buildConfigField "String", "API_BASE_URL", '"https://api.allma.app"'
+            buildConfigField "boolean", "ENABLE_LOGGING", "false"
+            buildConfigField "boolean", "ENABLE_CRASH_REPORTING", "true"
+            
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "environment"
+    
+    productFlavors {
+        dev {
+            dimension "environment"
+            applicationIdSuffix ".dev"
+            versionNameSuffix "-dev"
+            
+            // Development flavor configurations
+            buildConfigField "String", "ENVIRONMENT", '"development"'
+            buildConfigField "String", "GEMINI_API_KEY", '"' + (System.getenv('GEMINI_API_KEY_DEV') ?: 'dev-key') + '"'
+        }
+        
+        prod {
+            dimension "environment"
+            
+            // Production flavor configurations
+            buildConfigField "String", "ENVIRONMENT", '"production"'
+            buildConfigField "String", "GEMINI_API_KEY", '"' + (System.getenv('GEMINI_API_KEY_PROD') ?: 'prod-key') + '"'
+        }
+    }
+
+    // Bundle configuration for Play Store
+    bundle {
+        language {
+            enableSplit = false
+        }
+        density {
+            enableSplit = true
+        }
+        abi {
+            enableSplit = true
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
+    implementation 'androidx.activity:activity-compose:1.7.2'
+    
+    // Firebase dependencies (if needed)
+    implementation platform('com.google.firebase:firebase-bom:32.2.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    
+    // Security and encryption
+    implementation 'androidx.security:security-crypto:1.1.0-alpha06'
+    
+    // Network security
+    implementation 'com.squareup.okhttp3:okhttp:4.11.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.11.0'
+}
+
+// Apply Google Services plugin for Firebase
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'

@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.env
+.env.local
+.env.production
+*.log
+npm-debug.log*
+.DS_Store
+coverage/
+.nyc_output/
+*.key
+*.pem
+*.cert
+firebase-service-account.json
+uploads/
+temp/
