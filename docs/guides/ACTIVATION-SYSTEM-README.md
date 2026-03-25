@@ -63,7 +63,7 @@ Typical costs:
 Run comprehensive tests:
 
 ```bash
-cd /Users/mando/Desktop/agents
+cd path/to/allma
 python3 test-all-agents.py
 ```
 

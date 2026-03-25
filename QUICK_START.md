@@ -23,7 +23,7 @@ Your Allma AI companion app is almost ready! Follow these final steps to get sta
 
 ### **Add to Your App**:
 
-1. **Open**: `/Users/mando/Desktop/Allma/.env`
+1. **Open**: `.env` in the project root
 2. **Replace**: 
    ```env
    GEMINI_API_KEY=your_gemini_api_key_here

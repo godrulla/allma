@@ -19,7 +19,7 @@ NicknameAgentActivator = module.NicknameAgentActivator
 
 def test_all_agents():
     """Test activation for all agents."""
-    project_dir = "/Users/mando/Desktop/agents"
+    project_dir = str(Path(__file__).parent.parent.parent)
     activator = NicknameAgentActivator(project_dir)
     
     # Test cases for each agent

@@ -7,7 +7,7 @@ The app installed but won't open - this is a common iOS security issue. Here's h
 ### Step 1: Trust Developer Certificate
 1. **iPhone Settings → General → VPN & Device Management**
 2. **Look for**: "Developer App" section
-3. **Find**: "armandodiazsilverio@gmail.com" or "626WU844CN"
+3. **Find**: your Apple Developer certificate or Team ID
 4. **Tap it** → **Trust** → **Trust** (confirm)
 
 ### Step 2: Enable Developer Mode (if prompted)
@@ -27,7 +27,7 @@ The app installed but won't open - this is a common iOS security issue. Here's h
 Run this to reinstall with fresh certificate:
 ```bash
 flutter clean
-flutter run -d 00008120-0016712A1160201E
+flutter run -d YOUR_DEVICE_ID
 ```
 
 ## 🔍 Check App Installation
@@ -40,7 +40,7 @@ flutter run -d 00008120-0016712A1160201E
 ### Check Developer Certificate:
 - **Settings → General → VPN & Device Management**
 - **Device Management** section
-- Should show: **Apple Development: armandodiazsilverio@gmail.com**
+- Should show: **Apple Development: your-apple-id@example.com**
 
 ## 🚀 Once Fixed:
 
@@ -56,7 +56,7 @@ After trusting the certificate:
 flutter devices
 
 # Reinstall if needed
-flutter run -d 00008120-0016712A1160201E
+flutter run -d YOUR_DEVICE_ID
 
 # View logs if app crashes
 flutter logs
